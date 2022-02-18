@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+  <!--  独自ライブラリ読み込み -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+  <!--  /独自ライブラリ読み込み -->
+
+  <title>グラフ</title> 
+	<link rel="stylesheet" href="stylesheet.css" type="text/css" />	
+</head>
+<body>
+
+  <div class="graph_canvas" style="width:65%;" >
+    <canvas id="chart"></canvas>
+  </div>
+	
+  <div class="viewselect_area">
+ 	<div class="viewselect_button">min</div>
+	<div class="viewselect_button">middle</div>
+	<div class="viewselect_button">max</div>
+  </div>
+	
+  <div class="addpoint_area">
+	<div class="selectdata_area">
+		<div class="selectdata_button" id="selectX_button">
+			<form name="form1">
+				<select name="satisfaction_level">
+					<option value="1">もっとできたな</option>
+					<option value="2">もう少しできたな</option>
+					<option value="3">普通だった</option>
+					<option value="4">まあまあ頑張った</option>
+					<option value="5">めちゃ頑張った</option>
+				</select>
+			</form>
+		</div>
+		<div class="selectdata_button" id="selectY_button">
+			<input type="range" id="achievement_level" min="0" max="100" step="1">
+		</div>
+    </div>
+ 	<div id="addpoint_button">追加</div>
+	<button id="btn">更新</button>
+  </div>
+
+  <script type="text/javascript" src="dots_graph.js"></script>
+</body>
+
+</html>

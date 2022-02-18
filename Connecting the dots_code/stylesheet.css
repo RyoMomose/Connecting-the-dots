@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.graph_canvas{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* グラフ表示切り替えテーブル */
+.viewselect_area{
+	width: 80%;
+	display: flex;
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.viewselect_button{
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+/* グラフのドット追加テーブル */
+.addpoint_area{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.selectdata_area{
+	display: flex;
+	margin-top: 3%;
+}
+
+.selectdata_button{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.addpoint_button{
+	text-align: center
+}
